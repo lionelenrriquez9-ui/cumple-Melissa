@@ -13,6 +13,10 @@ lleno de alegría y momentos especiales.
 
 Perdón por no decírtelo antes,
 pero te deseo éxitos Meli siendo sincero.
-te quiero mucho
+Te quiero mucho 💖
 """
     st.success(mensaje)
+    
+    # Mostrar globos
+    st.balloons()
+
