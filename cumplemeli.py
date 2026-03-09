@@ -9,10 +9,10 @@ st.write("Tengo un pequeño mensaje para ti 💌")
 
 nombre = st.text_input("Ingresa el nombre:")
 
-if st.button("🎁 Abrir sorpresa"):
+if st.button("Abrir sorpresa"):
     
     if nombre.strip() == "":
-        st.warning("Por favor escribe un nombre 😊")
+        st.warning("Pon el nombre de melissa")
     else:
         
         # Animación de carga
@@ -23,7 +23,7 @@ if st.button("🎁 Abrir sorpresa"):
         st.snow()
 
         st.success(f"""
-🎉 ¡Feliz cumpleaños, {nombre}! 🎉
+🎉¡Feliz cumpleaños, {nombre}! 
 
 Bueno meli perdon por decirte feliz cumple muy tarde, perdon enserio y bueno espero que estes bien en lima y
 que te vallan bien siempre en los estudios, cuando hagas tu empresa me contratas aunque sea de limpia baños jsjajs
@@ -38,7 +38,8 @@ Te quiero mucho.
 """)
 
         st.subheader("🎂 Un pequeño pastel para ti")
-        st.write("Que todos tus deseos se cumplan hoy 🎉")
+        st.write("espero volvamos a vernoss")
+
 
 
 
