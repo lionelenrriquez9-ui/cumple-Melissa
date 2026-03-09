@@ -4,7 +4,7 @@ import time
 # Configuración de la página
 st.set_page_config(page_title="Cumpleaños 🎂", page_icon="🎉")
 
-st.title("🎂 Feliz Cumpleaños 🎉")
+st.title("Nombre de la cumpleañera(empieza con M)")
 st.write("Tengo un pequeño mensaje para ti 💌")
 
 nombre = st.text_input("Ingresa el nombre:")
@@ -39,6 +39,7 @@ Te quiero mucho.
 
         st.subheader("🎂 Un pequeño pastel para ti")
         st.write("Que todos tus deseos se cumplan hoy 🎉")
+
 
 
 
