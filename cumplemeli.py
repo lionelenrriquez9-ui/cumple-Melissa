@@ -1,14 +1,31 @@
 import streamlit as st
+import time
 
-st.title("Feliz Cumpleaños 🎂")
+# Configuración de la página
+st.set_page_config(page_title="Cumpleaños 🎂", page_icon="🎉")
+
+st.title("🎂 Feliz Cumpleaños 🎉")
+st.write("Tengo un pequeño mensaje para ti 💌")
 
 nombre = st.text_input("Ingresa el nombre:")
 
-if st.button("Mostrar mensaje"):
-    mensaje = f"""
-¡Feliz cumpleaños {nombre}!
+if st.button("🎁 Abrir sorpresa"):
+    
+    if nombre.strip() == "":
+        st.warning("Por favor escribe un nombre 😊")
+    else:
+        
+        # Animación de carga
+        with st.spinner("Preparando sorpresa..."):
+            time.sleep(2)
 
-Bueno mali perdon por decirte feliz cumple muy tarde, perdon enserio y bueno espero que estes bien en lima y
+        st.balloons()
+        st.snow()
+
+        st.success(f"""
+🎉 ¡Feliz cumpleaños, {nombre}! 🎉
+
+Bueno meli perdon por decirte feliz cumple muy tarde, perdon enserio y bueno espero que estes bien en lima y
 que te vallan bien siempre en los estudios, cuando hagas tu empresa me contratas aunque sea de limpia baños jsjajs
 y si diosito quiere nos veremos o si tu deseas tmb, nd mas que decir cuidate meli y otra vez lo digo FELIZ CUMPLEAÑOSS.
 Espero que hayas tenido un día maravilloso
@@ -16,11 +33,12 @@ lleno de alegría y momentos especiales.
 
 perdon perdon perdon por no decírtelo antes,
 espero que me perdones 🥺🥺 
-Te quiero mucho 
-"""
-    st.success(mensaje)
-    
-    # Mostrar globos
-    st.balloons()
+con mucho cariño  
+Te quiero mucho.
+""")
+
+        st.subheader("🎂 Un pequeño pastel para ti")
+        st.write("Que todos tus deseos se cumplan hoy 🎉")
+
 
 
